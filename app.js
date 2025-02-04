@@ -5,11 +5,10 @@ const { numProperties, digitSum, isPerfect, isPrime } = require('./utilis/index'
 
 const app = express();
 
-// CORS
+
 app.use(cors());
 
 
-// Main endpoint
 app.get("/api/classify-number", async (req, res) => {
   const { number } = req.query;
 
@@ -19,6 +18,7 @@ app.get("/api/classify-number", async (req, res) => {
       error: true,
     });
   }
+
 
   const num = Math.abs(Number(number));
 
