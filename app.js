@@ -8,10 +8,6 @@ const app = express();
 // CORS
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res.status(200).send("Hello, Welcome!");
-});
-
 // Main endpoint
 app.get("/api/classify-number", async (req, res) => {
   const { number } = req.query;

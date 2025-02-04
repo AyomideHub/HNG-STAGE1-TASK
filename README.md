@@ -4,13 +4,14 @@
 Create an API that takes a number and returns interesting mathematical properties about it, along with a fun fact.
 
 ## Requirements
- Must be deployed to a publicly accessible endpoint
- Must handle CORS (Cross-Origin Resource Sharing)
+ Must be deployed to a publicly accessible endpoint,
+ Must handle CORS (Cross-Origin Resource Sharing),
  Must return responses in JSON format
 
 ## Resources
- Fun fact API: http://numbersapi.com/#42
- https://en.wikipedia.org/wiki/Parity_(mathematics)
+ Fun fact API: http://numbersapi.com/#42,
+ 
+https://en.wikipedia.org/wiki/Parity_(mathematics)
 
 
 ## Documentation
