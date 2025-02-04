@@ -16,10 +16,10 @@ https://en.wikipedia.org/wiki/Parity_(mathematics)
 
 ## Documentation
 
-**Base URL**: `https://hng-stage0-task-tdv5.onrender.com`
+**Base URL**: `https://hng-tasks-tkt4.onrender.com`
 
 ### Main Endpoint
-**GET <your-domain.com>/api/classify-number?number=371**
+**GET   https://hng-tasks-tkt4.onrender.com/api/classify-number?number=371**
 ```json
 Response:
 {
