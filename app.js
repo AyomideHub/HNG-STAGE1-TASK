@@ -15,7 +15,7 @@ app.get("/api/classify-number", async (req, res) => {
 
   if (!Number(number) || !number) {
     return res.status(400).json({
-      number: "alphabet",
+      number,
       error: "true",
     });
   }
@@ -34,6 +34,8 @@ app.get("/api/classify-number", async (req, res) => {
       digit_sum: digitSum(num),
       fun_fact: funFact,
     };
+
+    res.set('Cache-Control', 'no-store');
 
     res.status(200).json(responseObject);
 
