@@ -35,15 +35,16 @@ app.get("/api/classify-number", async (req, res) => {
       fun_fact: funFact,
     };
 
-    res.set('Cache-Control', 'no-store');
+    //res.set('Cache-Control', 'no-store');
 
     res.status(200).json(responseObject);
 
   } catch (error) {
 
-    console.error("Error fetching fun fact:", error);
-    res.status(500).json({
-      error: "An error occurred while fetching the fun fact.",
+    //console.error("Error fetching fun fact:", error);
+    res.status(400).json({
+      number,
+      error: true,
     });
 
   }
