@@ -1,4 +1,5 @@
 const isPrime = num => {
+	num = Math.abs(num)
     if (num <= 1) {
 		return false;
 	} else if (num === 2 || num === 3) {

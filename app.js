@@ -12,15 +12,22 @@ app.use(cors());
 app.get("/api/classify-number", async (req, res) => {
   const { number } = req.query;
 
-  if (!Number(number) || !number) {
+  // if (!Number(number) || !number) {
+  //   return res.status(400).json({
+  //     number,
+  //     error: true,
+  //   });
+  // }
+
+  if (!number || !/^-?\d+$/.test(number)) {
     return res.status(400).json({
-      number,
+      number: number || "undefined",
       error: true,
     });
   }
 
 
-  const num = Math.abs(Number(number));
+  const num = Number(number);
 
   try {
     const Response = await fetch(`http://numbersapi.com/${num}/math`);

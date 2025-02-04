@@ -1,9 +1,11 @@
-const digitSum = (num) => {
-	num = num.toString()
-	let digit = num.split("")
-
-	const sum = digit.reduce((acc, numb) => acc + Number(numb), 0)
-	return sum
-}
+function digitSum(n) {
+	const str = Math.abs(n).toString(); 
+	let sum = 0;
+	for (let i = 0; i < str.length; i++) {
+	  sum += parseInt(str[i]) ; 
+	  
+	}
+	return (n < 0 ? -sum : sum)
+  }
 
 module.exports = {digitSum}

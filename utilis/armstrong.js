@@ -1,5 +1,5 @@
 const armstrong = (num) => {
-	
+	num = Math.abs(num)
 	const numString = num.toString().split("")
 	const numInt = numString.map( (num) => Number(num))
 	const power = Number(numInt.length)
@@ -16,6 +16,7 @@ const armstrong = (num) => {
 
 
 const numProperties = (num) => {
+	num = Math.abs(num)
 	const properties = []
 
 	if  (armstrong(num)){

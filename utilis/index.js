@@ -4,4 +4,6 @@ const {isPerfect} = require('./perfectnum')
 const {isPrime} = require('./PrimeNumber')
 
 
+  
+
 module.exports = {numProperties, digitSum, isPerfect, isPrime}
